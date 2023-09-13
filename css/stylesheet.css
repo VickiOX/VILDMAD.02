@@ -573,11 +573,11 @@ footer {
 .plants_bund1, .plants_bund3,
 .plants_bund_K1, .plants_bund_K3{
     justify-content: space-around;
+    position: relative;
     margin-top:40px;
     z-index: -1;
 }
 .plants_bund_K1, .plants_bund_K3{
-    position: relative;
     bottom: -36px;
 }
 .plants_bund3 .plants_bund_K3{
