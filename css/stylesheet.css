@@ -102,8 +102,24 @@ h3 {
     position: relative;
     margin: 30px;
     max-width: 100%;
-
+    
 }
+
+.forår_bg{
+    background-color: var(--forår-color);
+}
+.sommer_bg{
+    background-color: var(--sommer-color);
+}
+
+.efterår_bg{
+    background-color: var(--efterår-color);
+}
+
+.vinter_bg{
+    background-color: var(--vinter-color);
+}
+
 
 .grid_ikon {
     display: grid;

@@ -34,6 +34,10 @@ const category = urlParams.get("category");
 document.querySelector("h1").textContent = category
 document.querySelector("." + category).classList.add("active");
 
+
+
+
+
 /* // fetch
 fetch("https://kea-alt-del.dk/t7/api/products?limit=50&start=10&category=" + category)
 .then(res=>res.json())
@@ -50,8 +54,8 @@ function showProducts(){
 }
 
  */
-debugShowCategories()
-function debugShowCategories(){
+ShowCategoriesAndProducts()
+function ShowCategoriesAndProducts(){
 
 
 
@@ -76,6 +80,21 @@ function debugShowCategories(){
     product_template_copy.querySelector(".text1").textContent= product.bio;
     product_template_copy.querySelector(".text2").textContent= product.season;
     product_template_copy.querySelector(".product_img").src = product.image;
+    product_template_copy.querySelector(".product").src = product.image;
+
+    if(category == "Forår"){
+      product_template_copy.querySelector(".product").classList.add("forår_bg");
+    }
+    else if ( category == "Sommer"){
+      product_template_copy.querySelector(".product").classList.add("sommer_bg");
+    }
+    else if ( category == "Efterår"){
+      product_template_copy.querySelector(".product").classList.add("efterår_bg");
+    }
+    else if ( category == "Vinter"){
+      product_template_copy.querySelector(".product").classList.add("vinter_bg");
+    }
+    
 
     // for at kunne ændre på text 2 via onclick skal vi have en identificator på click elementet (data-id)
     product_template_copy.querySelector(".ikon1").setAttribute("data-id", product.id);
@@ -105,6 +124,7 @@ function debugShowCategories(){
     }
 
     //appende
+
     //subcategory_template_copy.querySelector(".grid").appendChild(product_template_copy);
     if(product.Løvskov == true){
       document.querySelector(".loev .grid").appendChild(product_template_copy)
@@ -114,7 +134,20 @@ function debugShowCategories(){
   });
   //appende
   //document.querySelector("main").appendChild(subcategory_template_copy);
+
 });
 
 }
 
+if(category == "Forår"){
+  document.querySelectorAll(".product").classList.add("forår_bg");
+}
+else if ( category == "Sommer"){
+  document.querySelectorAll(".product").classList.add("sommer_bg");
+}
+else if ( category == "Efterår"){
+  document.querySelectorAll(".product").classList.add("efterår_bg");
+}
+else if ( category == "Vinter"){
+  document.querySelectorAll(".product").classList.add("vinter_bg");
+}
