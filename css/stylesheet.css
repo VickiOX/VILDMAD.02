@@ -81,15 +81,16 @@ h2 {
     color: var(--secondary-color);
 }
 
-h1 {
-    padding-top: 20px;
+h1{
+    padding-top: 40px;
 }
 
 h2 {
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 30px;
 
 }
+
 
 h3 {
     text-align: center;
@@ -202,6 +203,7 @@ h3 {
 .efterår {
     display: flex;
     position: absolute;
+    font-size: 20px;
 }
 
 .vinter {
@@ -232,7 +234,7 @@ h3 {
     width: 50%;
     height: 50%;
     display: flex;
-    background: blue;
+    background: rgb(82, 82, 82);
     border: 1px solid black;
 }
 
@@ -311,6 +313,31 @@ footer {
         margin: 2rem auto;
         max-width: 400px;
     }
+
+    .cirkel{
+        max-width: 360px;
+        max-height: 360px;
+    }
+
+    .vinter p {
+        left:80px;
+        top: 90px;
+    }
+    
+    .forår p {
+        top: 90px;
+        right: 80px;
+    }
+    
+    .sommer p {
+        bottom: 90px;
+        right: 74px;
+    }
+    
+    .efterår p {
+        bottom: 90px;
+        left: 76px;
+    }
 }
 
 
@@ -321,32 +348,34 @@ footer {
         width: 30vw;
         height: 30vw;
         margin: auto;
+        min-width: 360px;
+        min-height: 360px;
     }
 
     main {
         margin: auto;
-        padding-top: 4%;
-        padding-bottom: 4%;
+        padding-top: 10px;
+        padding-bottom: 30px;
     }
 
     .vinter p {
-        left: 7vw;
-        top: 8vw;
+        left: 80px;
+        top: 90px;
     }
 
     .forår p {
-        top: 8vw;
-        right: 7vw;
+        top: 90px;
+        right:80px;
     }
 
     .sommer p {
-        bottom: 8vw;
-        right: 7vw;
+        bottom: 90px;
+        right: 74px;
     }
 
     .efterår p {
-        bottom: 8vw;
-        left: 7vw;
+        bottom: 90px;
+        left: 76px;
     }
 
 
@@ -447,6 +476,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 3;
 }
 
 
