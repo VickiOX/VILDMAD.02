@@ -561,36 +561,41 @@ li {
 }
 
 .breadcrumb-item {
-    border: 0.5px solid #ccc;
+    border: 0.5px solid var(--footer-color);
+    background-color: var(--secondary-color);
+
 }
 
 .breadcrumb-item.active {
+    border: 0.5px solid var(--secondary-color);
     border-bottom: 0px;
+    background: var(--primary-color);
+    
 }
 
 .breadcrumb-item a {
     /* kun når han hover over kategorierne, at linen dukker op*/
     text-decoration: none;
+    color: var(--tertiary-color);
     padding: 12px 0;
     height: 100%;
     width: 100%;
     display: inline-block;
 }
 
+/*.breadcrumb-item a.active{
+    color: var(--secondary-color);
+}*/
+
 .breadcrumb-item a:hover {
     text-decoration: underline;
+    scale: 1.04;
 }
 
 section {
     box-sizing: border-box;
     padding: 150px 100px 100px;
 }
-
-/*img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}*/
 
 main {
     margin: auto;
