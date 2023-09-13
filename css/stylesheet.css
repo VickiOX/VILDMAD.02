@@ -82,7 +82,10 @@ h2 {
 }
 
 h1 {
-    padding-top: 20px;
+    margin-top: -20px;
+}
+.Overskrift{
+    padding-top:20px; 
 }
 
 h2 {
@@ -260,6 +263,84 @@ h3 {
     position: absolute;
 }
 
+.grid_1-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.grid_1-1-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.plants_top1, .plants_top2, .plants_top3,
+.plants_bund1, .plants_bund2, .plants_bund3, 
+.plants_top_K1, .plants_top_K2, .plants_top_K3,
+.plants_bund_K1, .plants_bund_K3{
+    width:80px;
+}
+
+.plants_bund1, .plants_bund3,
+.plants_bund_K1, .plants_bund_K3{
+    justify-content: space-around;
+    margin-top:40px;
+    z-index: -1;
+}
+.plants_bund_K1, .plants_bund_K3{
+    position: relative;
+    bottom: -36px;
+}
+.plants_bund3 .plants_bund_K3{
+    margin-left:30px;
+}
+.plants_bund1,
+.plants_bund_K1 {
+    margin-left:10px;
+}
+
+.plants_bund_K3{
+    margin-left: 40px;
+}
+.bund{
+    position: absolute;
+}
+.plants_top1, .plants_top2, .plants_top_K2 {
+    justify-content: space-around;
+    z-index: -1;
+    margin-top:-20px;
+}
+
+.plants_top_K1{
+    justify-content: space-around;
+    z-index: -1;
+    margin-top:-4px;
+}
+
+.plants_top1, .plants_top_K1 {
+    justify-content: space-around;
+    z-index: 1;
+}
+.plants_top1, .plants_top_K1 {
+   margin-right:70px;
+   rotate: -220deg;
+   transform: scaleX(-1);
+   
+}
+
+.plants_top2, .plants_top_K2 {
+    rotate:270deg;
+    transform: scaleY(-1);
+}
+
+.plants_top3, .plants_top_K3 {
+    margin-right: -100px;
+    margin-top: -2px;
+    rotate:1deg;
+
+}
+
+
 /*****************************FOOTER*************************/
 .footer_stay p {
     /* dette hører til forsiden*/
@@ -311,6 +392,61 @@ footer {
         margin: 2rem auto;
         max-width: 400px;
     }
+
+
+
+.plants_bund1, .plants_bund3,
+.plants_bund_K1, .plants_bund_K3{
+    margin-top:40px;
+   
+}
+.plants_bund_K1, .plants_bund_K3{
+    position: relative;
+    bottom: 0;
+}
+
+.plants_bund1,
+.plants_bund_K1 {
+    margin-left:10px;
+}
+
+.bund{
+    position: absolute;
+}
+.plants_top1, .plants_top2, .plants_top_K2 {
+    justify-content: space-between;
+    z-index: -1;
+    margin-top:-20px;
+}
+
+.plants_top_K1{
+    justify-content: space-between;
+    z-index: -1;
+    margin-top:-4px;
+}
+
+.plants_top1, .plants_top_K1 {
+    justify-content: space-between;
+    z-index: 1;
+}
+.plants_top1, .plants_top_K1 {
+   margin-right:70px;
+   rotate: -220deg;
+   transform: scaleX(-1);
+   
+}
+
+.plants_top2, .plants_top_K2 {
+    rotate:270deg;
+    transform: scaleY(-1);
+}
+
+.plants_top3, .plants_top_K3 {
+    margin-top: -2px;
+ 
+    rotate:1deg;
+
+}
 }
 
 
@@ -326,7 +462,6 @@ footer {
     main {
         margin: auto;
         padding-top: 4%;
-        padding-bottom: 4%;
     }
 
     .vinter p {
@@ -389,6 +524,73 @@ footer {
         margin: auto;
     }
 
+    
+.plants_top1, .plants_top2, .plants_top3,
+.plants_bund1, .plants_bund2, .plants_bund3, 
+.plants_top_K1, .plants_top_K2, .plants_top_K3,
+.plants_bund_K1, .plants_bund_K3{
+    width:80px;
+}
+
+.plants_bund1, .plants_bund3,
+.plants_bund_K1, .plants_bund_K3{
+    justify-content: space-around;
+    margin-top:40px;
+    z-index: -1;
+}
+.plants_bund_K1, .plants_bund_K3{
+    position: relative;
+    bottom: -36px;
+}
+.plants_bund3 .plants_bund_K3{
+    margin-left:30px;
+}
+.plants_bund1,
+.plants_bund_K1 {
+    margin-left:10px;
+}
+
+.plants_bund_K3{
+    margin-left: 40px;
+}
+.bund{
+    position: absolute;
+}
+.plants_top1, .plants_top2, .plants_top_K2 {
+    justify-content: space-around;
+    z-index: -1;
+    margin-top:-20px;
+}
+
+.plants_top_K1{
+    justify-content: space-around;
+    z-index: -1;
+    margin-top:-4px;
+}
+
+.plants_top1, .plants_top_K1 {
+    justify-content: space-around;
+    z-index: 1;
+}
+.plants_top1, .plants_top_K1 {
+   margin-right:70px;
+   rotate: -220deg;
+   transform: scaleX(-1);
+   
+}
+
+.plants_top2, .plants_top_K2 {
+    rotate:270deg;
+    transform: scaleY(-1);
+}
+
+.plants_top3, .plants_top_K3 {
+    margin-right: -100px;
+    margin-top: -2px;
+    rotate:1deg;
+
+}
+
 
     /******************************/
     /************************HEADER********************/
@@ -435,6 +637,7 @@ footer {
     li:hover ul.dropdown {
         display: block;
     }
+
 }
 
 nav {
