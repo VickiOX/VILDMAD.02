@@ -86,9 +86,7 @@ nav .menu-btn i {
     cursor: pointer;
     display: none;
 }
-.active{
-    grid-column: 4;
-}
+
 input[type="checkbox"] {
     display: none;
 }
