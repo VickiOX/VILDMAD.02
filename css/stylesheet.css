@@ -224,13 +224,15 @@ a, .cirkel_text{
 }
 
 .vinter {
-    left: 0;
+    left: 10px;
     top: 0;
+    scale: 1.12;
 }
 
 .forår {
     top: 0;
-    right: 0;
+    right: -10px;
+    scale: 1.12;
 }
 
 .sommer {
@@ -240,7 +242,8 @@ a, .cirkel_text{
 
 .efterår {
     bottom: 0;
-    left: 0;
+    left: -10px;
+    scale: 0.99;
 }
 
 .cirkel a {
@@ -251,8 +254,6 @@ a, .cirkel_text{
     width: 50%;
     height: 50%;
     display: flex;
-    background: rgb(82, 82, 82);
-    border: 1px solid black;
 }
 
 .vinter p {
