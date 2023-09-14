@@ -1,13 +1,38 @@
+html {
+    --primary-color: #6C805A;
+    /*color til baggrund*/
+
+    --secondary-color: #E4E4E4;
+    /*til font h1 og h2*/
+
+    --tertiary-color: #363636;
+    /*til font, heraf h3 og p*/
+
+    --footer-color: #647852;
+    /*color til footer*/
+
+    --forår-color: #BCC5B3;
+    /*baggrund farve til box*/
+
+    --sommer-color: #EBE1B3;
+    /*baggrund farve til box*/
+
+    --efterår-color: #CB9292;
+    /*baggrund farve til box*/
+
+    --vinter-color: #F2F2F2;
+    /*baggrund farve til box*/
+}
 nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0px;
     height: 100px;
     width: 100%;
     align-items: center;
     justify-content: space-between;
     padding: 0 100px;
-    flex-wrap: wrap;
-    background-color: #262f1e;
+    background-color: var(--footer-color);
 }
 
 .logocontainer {
@@ -15,7 +40,7 @@ nav {
 }
 
 nav .vild-logo {
-    color: #000000;
+    color: var(--tertiary-color);
     font-size: 27px;
     max-width: 80px;
     margin: auto;
@@ -39,7 +64,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #000000;
+    color: var(--secondary-color);
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
@@ -51,29 +76,30 @@ nav ul li a {
 
 nav ul li a.active,
 nav ul li a:hover {
-    color: #000000;
-    background: #C4A992;
+    color: var(--secondary-color);
+    background: var(--primary-color);
 }
 
 nav .menu-btn i {
-    color: #000000;
+    color: var(--secondary-color);
     font-size: 22px;
     cursor: pointer;
     display: none;
 }
-
+.active{
+    grid-column: 4;
+}
 input[type="checkbox"] {
     display: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 860px) {
     nav {
         padding: 0 40px 0 50px;
         z-index: 4;
+        grid-template-columns: 1fr 1fr 1fr;
     }
-}
 
-@media (max-width: 920px) {
     nav .menu-btn i {
         display: block;
         z-index: 4;
@@ -87,7 +113,7 @@ input[type="checkbox"] {
         position: fixed;
         top: 80px;
         left: -100%;
-        background: #EBDDCE;
+        background: var(--footer-color);
         height: 100vh;
         width: 100%;
         text-align: center;
@@ -99,7 +125,12 @@ input[type="checkbox"] {
     #click:checked~ul {
         left: 0;
     }
-
+    .menu-btn{
+        justify-self: end;
+    }
+    .logocontainer{
+        justify-self: center;
+    }
 
     nav ul li {
         width: 100%;
@@ -123,6 +154,6 @@ input[type="checkbox"] {
     nav ul li a.active,
     nav ul li a:hover {
         background: none;
-        color: #C4A992;
+        color: var(--tertiary-color);
     }
 }
