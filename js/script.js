@@ -139,15 +139,3 @@ function ShowCategoriesAndProducts(){
 
 }
 
-if(category == "Forår"){
-  document.querySelectorAll(".product").classList.add("forår_bg");
-}
-else if ( category == "Sommer"){
-  document.querySelectorAll(".product").classList.add("sommer_bg");
-}
-else if ( category == "Efterår"){
-  document.querySelectorAll(".product").classList.add("efterår_bg");
-}
-else if ( category == "Vinter"){
-  document.querySelectorAll(".product").classList.add("vinter_bg");
-}
