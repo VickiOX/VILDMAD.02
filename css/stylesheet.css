@@ -644,7 +644,7 @@ footer {
     /************************HEADER********************/
 
     /*HEADER*/
-
+    /* 
     .scrollUl {
         margin: 0;
         padding: 0;
@@ -663,7 +663,7 @@ footer {
         font-weight: bold;
         font-size: 1.5em;
         margin: 0;
-    }
+    } */
 
     /*SUB MENU*/
     ul.dropdown {
@@ -688,6 +688,7 @@ footer {
 
 }
 
+/* 
 nav {
     position: fixed;
     top: 0;
@@ -719,6 +720,7 @@ nav {
 }
 
 /*hamburgermenu*/
+/*
 .nav-link {
     display: flex;
     padding: 5%;
@@ -799,7 +801,7 @@ li {
     font-size: 20px;
     margin: 0 10px 0;
     color: #c2dfc1;
-}
+} */
 
 /******************** BREADCRUMS ***********************/
 
